@@ -82,7 +82,7 @@ class DPCodeIntegerWrapper(DPCodeWrapper):
         """
         if (raw_value := self._read_device_status_raw(device)) is None:
             return None
-        return self.integer_type_information.scale_value(raw_value)
+        return raw_value / (10**self.integer_type_information.scale)
 
     @classmethod
     def find_dpcode(
