@@ -70,6 +70,7 @@ class DPCodeEnumWrapper(DPCodeWrapper):
         return None
 
 
+@dataclass(kw_only=True)
 class DPCodeIntegerWrapper(DPCodeWrapper):
     """Simple wrapper for IntegerTypeData values."""
 
