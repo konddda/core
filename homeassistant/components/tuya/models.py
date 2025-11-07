@@ -33,7 +33,7 @@ class DPCodeWrapper:
 
     def read_device_status(self, device: CustomerDevice) -> Any | None:
         """Read the device value for the dpcode."""
-        raise NotImplementedError("read_device_value must be implemented")
+        raise NotImplementedError("read_device_status must be implemented")
 
 
 @dataclass(kw_only=True)
